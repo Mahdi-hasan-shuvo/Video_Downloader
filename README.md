@@ -2,16 +2,14 @@
 
 <div align="center">
 
-![Video Downloader Banner](https://img.shields.io/badge/Video-Downloader-6366f1?style=for-the-badge&logo=download&logoColor=white)
+![Video Downloader](https://img.shields.io/badge/Video-Downloader-blue?style=for-the-badge&logo=youtube)
+![Python](https://img.shields.io/badge/Python-3.8+-green?style=for-the-badge&logo=python)
+![Flask](https://img.shields.io/badge/Flask-2.0+-black?style=for-the-badge&logo=flask)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
 **Download videos from YouTube, Facebook, and Instagram with ease!**
 
-[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-2.0+-000000?style=flat-square&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
-
-[Features](#-features) • [Demo](#-demo) • [Installation](#-installation) • [Usage](#-usage) • [API Documentation](#-api-documentation) • [Contributing](#-contributing)
+[Demo](#-demo) • [Features](#-features) • [Installation](#-installation) • [Usage](#-usage) • [Contact](#-contact-me-for-paid-projects)
 
 </div>
 
@@ -19,117 +17,99 @@
 
 ## 📋 Table of Contents
 
+- [About](#-about)
 - [Features](#-features)
 - [Demo](#-demo)
-- [Screenshots](#-screenshots)
 - [Tech Stack](#-tech-stack)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [API Documentation](#-api-documentation)
+- [API Endpoints](#-api-endpoints)
 - [Project Structure](#-project-structure)
-- [Configuration](#-configuration)
 - [Contributing](#-contributing)
 - [License](#-license)
-- [Contact](#-contact)
+- [Contact](#-contact-me-for-paid-projects)
+
+---
+
+## 🌟 About
+
+**Video Downloader** is a modern, user-friendly web application that allows you to download videos from popular social media platforms including YouTube, Facebook, and Instagram. Built with Flask and featuring a beautiful, responsive UI, this tool makes video downloading simple and efficient.
+
+### Why This Project?
+
+- 🚀 **Fast & Efficient** - Optimized download speeds
+- 🎨 **Beautiful UI** - Modern, animated interface
+- 📱 **Fully Responsive** - Works on all devices
+- 🔒 **Privacy Focused** - No data stored
+- 🆓 **Free & Open Source** - Use it anywhere
 
 ---
 
 ## ✨ Features
 
-### 🚀 Core Features
+### 🎯 Core Features
 
-- **Multi-Platform Support**: Download videos from YouTube, Facebook, and Instagram
-- **High-Quality Downloads**: Get videos in the best available quality
-- **Fast Processing**: Optimized download engine for maximum speed
-- **User-Friendly Interface**: Beautiful, modern, and responsive UI
-- **No Registration Required**: Start downloading immediately
-- **Unlimited Downloads**: Download as many videos as you want
+- ✅ **Multi-Platform Support**
+  - YouTube videos & shorts
+  - Facebook videos & photos
+  - Instagram videos & reels
 
-### 🎨 UI/UX Features
+- ✅ **Smart Detection**
+  - Automatic platform recognition
+  - Video info extraction
+  - Quality selection
 
-- ✅ Animated gradient backgrounds
-- ✅ Smooth transitions and interactions
-- ✅ Real-time progress tracking
-- ✅ Platform auto-detection
-- ✅ Copy-paste support
-- ✅ Keyboard shortcuts
-- ✅ Mobile-responsive design
-- ✅ Dark-themed footer
+- ✅ **User Experience**
+  - Real-time progress tracking
+  - Instant download feedback
+  - Error handling & validation
+  - Responsive design
 
-### 🔒 Security & Privacy
-
-- 🛡️ Secure file handling
-- 🔐 No data storage
-- ⏰ Automatic file cleanup (1-hour retention)
-- 🚫 No tracking or analytics
+- ✅ **Technical Features**
+  - Automatic file cleanup
+  - Concurrent downloads support
+  - Custom headers & cookies
+  - Session management
 
 ---
 
 ## 🎬 Demo
 
-### Live Demo
-[Coming Soon] <!-- Add your deployment URL here -->
+### Screenshots
 
-### Quick Start
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/video-downloader.git
-
-# Navigate to the project
-cd video-downloader
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the application
-python app.py
+#### Main Interface
+```
+┌─────────────────────────────────────┐
+│     📥 Video Downloader             │
+│                                     │
+│  Paste URL: [________________] 🔽  │
+│                                     │
+│  📱 YouTube  📘 Facebook  📷 Insta  │
+└─────────────────────────────────────┘
 ```
 
-Visit `http://localhost:5000` in your browser!
-
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-### Home Page
-![Home Page](<img width="1302" height="994" alt="Screenshot 2025-12-18 215545" src="https://github.com/user-attachments/assets/f38fbec7-e30e-441c-828b-3c0258bd6f9c" />
-)
-
-### Download Process
-![Download Process](<img width="1428" height="875" alt="image" src="https://github.com/user-attachments/assets/b914bb16-67c4-477c-808d-b710c6508dea" />
-)
-
-### Mobile View
-<img src="screenshots/mobile.png" width="300" alt="Mobile View">
-
-</div>
+#### Download Flow
+1. **Paste URL** → Auto-detect platform
+2. **Click Download** → Fetch video info
+3. **Progress Bar** → Show download status
+4. **Success** → Download file ready
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Backend
-- **Python 3.8+** - Core programming language
-- **Flask 2.0+** - Web framework
-- **BeautifulSoup4** - HTML parsing
+- **Flask** - Web framework
 - **Requests** - HTTP library
+- **BeautifulSoup4** - HTML parsing
 - **fake-useragent** - User agent rotation
 
 ### Frontend
-- **HTML5** - Markup language
-- **CSS3** - Styling with custom properties
-- **JavaScript (ES6+)** - Interactive functionality
-- **Font Awesome 6.4.0** - Icons
-- **Google Fonts (Poppins)** - Typography
-
-### Features
-- Context managers for resource handling
-- Async download processing
-- Thread-based file cleanup
-- Custom exception handling
-- RESTful API design
+- **HTML5** - Structure
+- **CSS3** - Styling with animations
+- **JavaScript (ES6+)** - Interactivity
+- **Font Awesome** - Icons
+- **Google Fonts** - Typography
 
 ---
 
@@ -138,67 +118,62 @@ Visit `http://localhost:5000` in your browser!
 ### Prerequisites
 
 - Python 3.8 or higher
-- pip (Python package manager)
-- Git
+- pip package manager
+- Internet connection
 
-### Step-by-Step Installation
+### Step-by-Step Guide
 
-1. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/video-downloader.git
-   cd video-downloader
-   ```
+1. **Clone the repository**
+```bash
+git clone https://github.com/Mahdi-hasan-shuvo/Video_Downloader.git
+cd Video_Downloader
+```
 
-2. **Create Virtual Environment** (Recommended)
-   ```bash
-   # Windows
-   python -m venv venv
-   venv\Scripts\activate
+2. **Create virtual environment**
+```bash
+# Windows
+python -m venv venv
+venv\Scripts\activate
 
-   # macOS/Linux
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
+# Linux/Mac
+python3 -m venv venv
+source venv/bin/activate
+```
 
-3. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+3. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
 
-4. **Create Required Directories**
-   ```bash
-   mkdir downloads
-   mkdir moduls
-   ```
+4. **Run the application**
+```bash
+python app.py
+```
 
-5. **Run the Application**
+5. **Open in browser**
+```
+http://localhost:5000
+```
+
+---
+
+## 🚀 Usage
+
+### Basic Usage
+
+1. **Start the server**
    ```bash
    python app.py
    ```
 
-6. **Access the Application**
-   Open your browser and navigate to:
-   ```
-   http://localhost:5000
-   ```
+2. **Open your browser**
+   - Navigate to `http://localhost:5000`
 
----
-
-## 🎯 Usage
-
-### Web Interface
-
-1. **Open the Application**
-   - Navigate to `http://localhost:5000` in your web browser
-
-2. **Enter Video URL**
-   - Paste a YouTube, Facebook, or Instagram video URL into the input field
-   - The platform will be automatically detected
-
-3. **Download Video**
-   - Click the "Download" button
-   - Wait for the video to be processed
-   - Click "Download File" to save the video to your device
+3. **Download a video**
+   - Copy video URL from YouTube/Facebook/Instagram
+   - Paste into the input field
+   - Click "Download"
+   - Save the file
 
 ### Supported URL Formats
 
@@ -207,13 +182,12 @@ Visit `http://localhost:5000` in your browser!
 https://www.youtube.com/watch?v=VIDEO_ID
 https://youtu.be/VIDEO_ID
 https://www.youtube.com/shorts/VIDEO_ID
-https://www.youtube.com/embed/VIDEO_ID
 ```
 
 #### Facebook
 ```
-https://www.facebook.com/username/videos/VIDEO_ID
-https://fb.watch/VIDEO_ID
+https://www.facebook.com/video/VIDEO_ID
+https://fb.watch/WATCH_ID
 ```
 
 #### Instagram
@@ -222,264 +196,196 @@ https://www.instagram.com/p/POST_ID/
 https://www.instagram.com/reel/REEL_ID/
 ```
 
-### Keyboard Shortcuts
-
-- **Ctrl/Cmd + V**: Focus on URL input
-- **Enter**: Submit download (when input is focused)
-- **Escape**: Clear input and hide messages
-
 ---
 
-## 📚 API Documentation
+## 🔌 API Endpoints
 
-Detailed API documentation is available in [API.md](API.md)
+### GET `/`
+Returns the main HTML page
 
-### Quick Reference
+### POST `/api/get-info`
+Get video information without downloading
 
-#### Get Video Information
-```http
-POST /api/get-info
-Content-Type: application/json
-
+**Request:**
+```json
 {
-  "url": "https://www.youtube.com/watch?v=VIDEO_ID"
+  "url": "https://www.youtube.com/watch?v=..."
 }
 ```
 
-#### Download Video
-```http
-POST /api/download
-Content-Type: application/json
-
+**Response:**
+```json
 {
-  "url": "https://www.youtube.com/watch?v=VIDEO_ID"
+  "success": true,
+  "platform": "youtube",
+  "info": {
+    "title": "Video Title",
+    "download_url": "...",
+    "Fyle_type": "Video"
+  }
 }
 ```
 
-#### Download File
-```http
-GET /api/download-file/{filename}
+### POST `/api/download`
+Download video and return file info
+
+**Request:**
+```json
+{
+  "url": "https://www.youtube.com/watch?v=..."
+}
 ```
 
-For complete API documentation, see [API.md](API.md)
+**Response:**
+```json
+{
+  "success": true,
+  "filename": "youtube_1234567890.mp4",
+  "platform": "youtube",
+  "title": "Video Title"
+}
+```
+
+### GET `/api/download-file/<filename>`
+Serve the downloaded file
+
+### GET `/api/supported-platforms`
+Get list of supported platforms
 
 ---
 
 ## 📁 Project Structure
 
 ```
-video-downloader/
+Video_Downloader/
 │
 ├── app.py                      # Main Flask application
 ├── requirements.txt            # Python dependencies
-├── README.md                   # This file
-├── API.md                      # API documentation
 │
-├── moduls/                     # Custom modules
+├── moduls/
 │   ├── __init__.py
-│   ├── utlitis.py             # Downloader class and utilities
-│   ├── expection.py           # Custom exceptions
-│   └── parsing.py             # URL parsing and headers
+│   ├── utlitis.py             # Core download logic
+│   ├── parsing.py             # URL parsing & headers
+│   └── expection.py           # Custom exceptions
 │
-├── templates/                  # HTML templates
-│   └── index.html             # Main page template
+├── templates/
+│   └── index.html             # Main HTML template
 │
-├── static/                     # Static files
+├── static/
 │   ├── css/
-│   │   └── style.css          # Main stylesheet
+│   │   └── style.css          # Styles & animations
 │   └── js/
-│       └── main.js            # JavaScript functionality
+│       └── main.js            # Frontend logic
 │
-├── downloads/                  # Temporary download storage
-│   └── .gitkeep
+├── downloads/                  # Downloaded files (auto-cleanup)
 │
-└── screenshots/                # Screenshots for documentation
-    ├── home.png
-    ├── download.png
-    └── mobile.png
+└── README.md                   # This file
 ```
 
 ---
 
-## ⚙️ Configuration
+## 🎨 Features Breakdown
 
-### Environment Variables
+### Frontend Features
+- ✨ Smooth animations
+- 🎯 Real-time URL validation
+- 📊 Progress tracking
+- 💫 Interactive feedback
+- 🌙 Modern gradient design
+- 📱 Mobile responsive
 
-Create a `.env` file in the root directory:
-
-```env
-# Flask Configuration
-FLASK_APP=app.py
-FLASK_ENV=development
-SECRET_KEY=your-secret-key-here
-
-# Server Configuration
-HOST=0.0.0.0
-PORT=5000
-
-# Upload Configuration
-UPLOAD_FOLDER=downloads
-MAX_CONTENT_LENGTH=524288000  # 500MB in bytes
-
-# Cleanup Configuration
-CLEANUP_INTERVAL=3600  # 1 hour in seconds
-FILE_RETENTION=3600    # 1 hour in seconds
-```
-
-### Application Settings
-
-Edit `app.py` to customize:
-
-```python
-app.config['UPLOAD_FOLDER'] = 'downloads'
-app.config['MAX_CONTENT_LENGTH'] = 500 * 1024 * 1024  # 500MB max
-```
+### Backend Features
+- 🔄 Context manager for downloads
+- 🧹 Automatic file cleanup
+- 🔒 Secure filename handling
+- ⚡ Threaded operations
+- 🛡️ Error handling
+- 📝 Comprehensive logging
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these steps:
+Contributions are welcome! Please follow these steps:
 
-1. **Fork the Repository**
-   ```bash
-   git fork https://github.com/yourusername/video-downloader.git
-   ```
-
-2. **Create a Feature Branch**
+1. Fork the repository
+2. Create your feature branch
    ```bash
    git checkout -b feature/AmazingFeature
    ```
-
-3. **Commit Your Changes**
+3. Commit your changes
    ```bash
    git commit -m 'Add some AmazingFeature'
    ```
-
-4. **Push to the Branch**
+4. Push to the branch
    ```bash
    git push origin feature/AmazingFeature
    ```
-
-5. **Open a Pull Request**
+5. Open a Pull Request
 
 ### Contribution Guidelines
-
-- Follow PEP 8 style guide for Python code
-- Use meaningful commit messages
-- Add tests for new features
-- Update documentation as needed
-- Ensure all tests pass before submitting
+- Follow PEP 8 style guide
+- Add comments for complex logic
+- Update documentation
+- Test your changes
 
 ---
 
-## 🐛 Known Issues
-
-- YouTube downloads may occasionally fail due to API changes
-- Facebook videos with age restrictions may not be downloadable
-- Instagram private account videos cannot be downloaded
-
-For a complete list of issues and feature requests, visit our [Issues Page](https://github.com/yourusername/video-downloader/issues)
-
----
-
-## 🗺️ Roadmap
-
-### Version 1.1 (Coming Soon)
-- [ ] Download quality selection
-- [ ] Batch download support
-- [ ] Download history
-- [ ] User preferences
-
-### Version 1.2
-- [ ] TikTok support
-- [ ] Twitter/X video support
-- [ ] Audio-only download option
-- [ ] Subtitle download
-
-### Version 2.0
-- [ ] User authentication
-- [ ] Cloud storage integration
-- [ ] Video format conversion
-- [ ] Scheduled downloads
-
----
-
-## 📄 License
+## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```
-MIT License
-
-Copyright (c) 2024 Your Name
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
 ---
 
-## ⚠️ Disclaimer
+## 💼 Contact Me for Paid Projects
 
-This tool is for educational purposes only. Please respect copyright laws and the terms of service of the platforms you're downloading from. Only download content you have permission to download.
+Have a project in mind or need expert help?  
+I'm available for **freelance work and paid collaborations**.
+
+### 📬 Get in Touch
+
+- 📧 **Email**: [shuvobbhh@gmail.com](mailto:shuvobbhh@gmail.com)
+- 💬 **Telegram**: [+8801616397082](https://t.me/+8801616397082)
+- 📱 **WhatsApp**: [+8801616397082](https://wa.me/8801616397082)
+- 🌐 **Portfolio**: [mahdi-hasan-shuvo.github.io](https://mahdi-hasan-shuvo.github.io/Mahdi-hasan-shuvo/)
+- 💻 **GitHub**: [@Mahdi-hasan-shuvo](https://github.com/Mahdi-hasan-shuvo)
+
+> *"Quality work speaks louder than words. Let's build something remarkable together."*
+
+### 🎯 Services I Offer
+
+- 🐍 Python Development (Flask, Django, FastAPI)
+- 🌐 Web Scraping & Automation
+- 🤖 Bot Development (Telegram, Discord, WhatsApp)
+- 📱 API Development & Integration
+- 🔧 Custom Tool Development
+- 💾 Database Design & Management
 
 ---
 
 ## 🙏 Acknowledgments
 
-- [Flask](https://flask.palletsprojects.com/) - The web framework used
-- [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/) - HTML parsing
-- [Font Awesome](https://fontawesome.com/) - Icons
-- [Google Fonts](https://fonts.google.com/) - Poppins font family
-- All contributors who have helped with code, bug reports, and suggestions
+- Font Awesome for icons
+- Google Fonts for typography
+- Flask community for excellent framework
+- All contributors and users
 
 ---
 
-## 💼 Contact Me for Paid Projects  
+## 📊 Stats
 
-Have a project in mind or need expert help?  
-I’m available for **freelance work and paid collaborations**.  
-
-📩 **Email**: [shuvobbhh@gmail.com]  
-💬 **Telegram / WhatsApp**: [+8801616397082]  
-🌐 **Portfolio**: [Portfolio Website](https://mahdi-hasan-shuvo.github.io/Mahdi-hasan-shuvo/)  
-
-> *"Quality work speaks louder than words. Let's build something remarkable together."*  
-
----
-
-## 💖 Support
-
-If you found this project helpful, please consider:
-
-- ⭐ Starring the repository
-- 🐛 Reporting bugs
-- 💡 Suggesting new features
-- 🔀 Contributing to the code
+![GitHub stars](https://img.shields.io/github/stars/Mahdi-hasan-shuvo/Video_Downloader?style=social)
+![GitHub forks](https://img.shields.io/github/forks/Mahdi-hasan-shuvo/Video_Downloader?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/Mahdi-hasan-shuvo/Video_Downloader?style=social)
 
 ---
 
 <div align="center">
 
-**Made with ❤️ by [Your Name](https://github.com/yourusername)**
+### ⭐ Star this repository if you find it useful!
 
-[![GitHub followers](https://img.shields.io/github/followers/yourusername?style=social)](https://github.com/yourusername)
-[![Twitter Follow](https://img.shields.io/twitter/follow/yourusername?style=social)](https://twitter.com/yourusername)
+**Made with ❤️ by [Mahdi Hasan Shuvo](https://github.com/Mahdi-hasan-shuvo)**
+
+[⬆ Back to Top](#-video-downloader)
 
 </div>
