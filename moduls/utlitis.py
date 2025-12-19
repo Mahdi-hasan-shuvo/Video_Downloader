@@ -72,7 +72,7 @@ class downloder:
         
         try:
             json_data = {
-                'url': 'https://www.youtube.com/watch?v=suk3mW0tDPA&list=RDo0eAWXs19jE&index=2',
+                'url': self.url,
             }
 
             response = post('https://www.clipto.com/api/youtube', cookies=YT_cookie_dict(), headers=YT_headers, json=json_data)
